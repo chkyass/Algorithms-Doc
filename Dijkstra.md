@@ -1,4 +1,4 @@
-# Dijkstra
+# Dijkstra with min Priority Queue V + Elog(v)
 
 Greedy algorithm relying on BFS to compute single source shortest paths. Use a structure to store a mapping of vertices with the minimal cost to get to them in increasing cost order. The gready component of the algorithm is based on the fact that the minimal cost mapping in the structure contain the shortest to this vertices at each iterations
 
@@ -33,7 +33,7 @@ void dijkstra(Node src, Node dst) {
 
     for(neigh in node.neighboors){
       //update shortestPaths of a node
-      // if node don't exist in the map assume previous cost is infinity
+      // if node doesn't exist in the map assume previous cost is infinity
       relax(neigh, shortestPaths.get(node)+node.edge[neigh])
     }
   }
