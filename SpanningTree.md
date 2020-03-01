@@ -18,7 +18,7 @@ Each set has a root node with arr[arr[...arr[i]...]] = root. So to check if two 
 
 To do an union we can just make value of root of one set to be root of the other set---> Problem: this can lead to very tall tree and we and up with O(N) complexity
 
-To flatten the structure we maintain the size of each set and merge always the smaller in the bigger. And durring the phase of root computation we make each node seen pointing to his grand parent to compress the deepness. We have to make the bigger set become the overall root to minimize the number of changes to do during the union phase
+To flatten the structure we maintain the size of each set and merge each timt the smaller set in the bigger. And durring the phase of root computation we make each node seen pointing to his grand parent to compress the deepness. We have to make the bigger set become the overall root to minimize the number of changes to do during the union phase
 
 #### Implementation
 ```java
